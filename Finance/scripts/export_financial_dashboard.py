@@ -306,24 +306,24 @@ def generate_html_dashboard(export_date):
         <div class="metrics">
             <div class="metric-card">
                 <div class="metric-label">Current Balance</div>
-                <div class="metric-value currency positive">£{balance:,.2f}</div>
+                <div class="metric-value currency positive">₫{balance:,.0f}</div>
             </div>
             
             <div class="metric-card">
                 <div class="metric-label">Sales (30 Days)</div>
-                <div class="metric-value currency">£{sales_30d['total_sales']:,.2f}</div>
+                <div class="metric-value currency">₫{sales_30d['total_sales']:,.0f}</div>
                 <div class="metric-change">{sales_30d['total_orders']} orders</div>
             </div>
             
             <div class="metric-card">
                 <div class="metric-label">Inventory Value</div>
-                <div class="metric-value currency">£{total_inventory_value:,.2f}</div>
+                <div class="metric-value currency">₫{total_inventory_value:,.0f}</div>
                 <div class="metric-change">{len(inventory)} products</div>
             </div>
             
             <div class="metric-card">
                 <div class="metric-label">30-Day VAT</div>
-                <div class="metric-value currency">£{sales_30d['total_vat']:,.2f}</div>
+                <div class="metric-value currency">₫{sales_30d['total_vat']:,.0f}</div>
             </div>
         </div>
         
@@ -345,7 +345,7 @@ def generate_html_dashboard(export_date):
             html += f"""                    <tr>
                         <td>{product['name']}</td>
                         <td>{product['units']}</td>
-                        <td class="currency">£{product['sales']:,.2f}</td>
+                        <td class="currency">₫{product['sales']:,.0f}</td>
                     </tr>
 """
     else:
@@ -379,8 +379,8 @@ def generate_html_dashboard(export_date):
                         <td>{item['name']}</td>
                         <td style="font-family: monospace;">{item['sku']}</td>
                         <td>{item['units']}</td>
-                        <td class="currency">£{item['unit_cost']:,.2f}</td>
-                        <td class="currency">£{item['total_value']:,.2f}</td>
+                        <td class="currency">₫{item['unit_cost']:,.0f}</td>
+                        <td class="currency">₫{item['total_value']:,.0f}</td>
                     </tr>
 """
     else:
