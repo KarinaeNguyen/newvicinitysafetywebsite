@@ -37,4 +37,4 @@ Our core IP is protected under the jurisdiction of Singapore, while R&D and low-
 - [Technology](https://www.vicinitysafety.com/project.html)
 - [Blog](https://www.vicinitysafety.com/blog.html)
 - [Contact](https://www.vicinitysafety.com/contact.html)
-- [Publication/FinancialReport](https://www.vicinitysafety.com/finance.html)
+- [Sitemap](https://www.vicinitysafety.com/llms.txt)
