@@ -1,0 +1,40 @@
+# Vicinity Safety Vietnam
+
+> Vicinity Safety Vietnam is a technology company focused on R&D in fire safety, founded by Karina Nguyen in 2024. Our mission is to lead as a Vietnam-based innovator holding the IP for the Firefighting Bullet-VFEV© design and manufacturing process.
+
+## About Us
+
+Vicinity Safety Vietnam innovates low-impact fire safety solutions that address the challenges posed by traditional suppression methods. We are headquartered in Ho Chi Minh City, Vietnam.
+
+- Website: www.vicinitysafety.com
+- Email: hotro@vicinitysafety.shop
+- Phone: +(84) 385 559
+- Address: 267 Nguyen Van Dau, Phuong Binh Loi, TP. Ho Chi Minh
+- Operating Hours: Monday - Friday, 8:00 AM - 5:00 PM
+
+## Core Technology: VFEP System
+
+Our flagship product is the Vacuum Fire Extinguishment Projectile (VFEP), an autonomous projectile suppression system engineered for high-risk aerospace environments. The system utilizes a frangible projectile filled with micronized Purple K (Potassium Bicarbonate) to deliver an intense, localized suppression cloud at the seat of a fire.
+
+VFEP instantly neutralizes high-energy electrical and battery fires in vacuum or microgravity environments, guaranteeing zero hardware contamination and maximum mission uptime. The technology focuses on minimal kinetic impact combined with maximum chemical dispersal, shattering violently upon light impact to instantly aerosolize the suppression agent.
+
+## Target Market & Value Proposition
+
+Our primary target markets include high-value aerospace and defense customers such as NASA and the European Space Agency, as well as terrestrial enterprise data centers. We provide a waterless fire suppression solution that minimizes secondary damage and cleanup costs on sensitive equipment like lithium-ion UPS systems and electronics. The system bypasses the limitations of traditional fixed systems, which often result in significant secondary damage or slow response times.
+
+## Business & Intellectual Property Strategy
+
+Vicinity Safety has adopted a highly scalable, asset-light licensing business model designed to minimize heavy capital expenditures. We generate revenue through upfront licensing fees and ongoing royalties by licensing our patented technology to established aerospace OEMs and systems integrators.
+
+Our core IP is protected under the jurisdiction of Singapore, while R&D and low-cost prototyping occur in Vietnam. We offer a strategic, royalty-free license to all sovereign governments worldwide for public safety and defense applications to foster global adoption.
+
+## Sitemap
+
+- [Home](https://www.vicinitysafety.com/index.html)
+- [About](https://www.vicinitysafety.com/about.html)
+- [Our Team](https://www.vicinitysafety.com/team.html)
+- [Store](https://www.vicinitysafety.com/store.html)
+- [Technology](https://www.vicinitysafety.com/project.html)
+- [Blog](https://www.vicinitysafety.com/blog.html)
+- [Contact](https://www.vicinitysafety.com/contact.html)
+- [Publication/FinancialReport](https://www.vicinitysafety.com/finance.html)
