@@ -1,0 +1,74 @@
+log_types:
+  PRODUCT_UPDATE:
+    fields:
+      - sku
+      - barcode
+      - name
+      - unit_cost
+      - unit_price
+      - unit_count   # can mean absolute on_hand OR a delta; controlled by settings
+      - qty_delta    # optional explicit delta (+/-)
+      - notes
+    detect:
+      required_all: [sku]
+      required_any: [barcode, name, unit_cost, unit_price, unit_count, qty_delta]
+      forbidden_any: []
+
+  SALES:
+    fields:
+      - ref_no
+      - date
+      - customer
+      - sku
+      - qty
+      - unit_price
+      - discount
+      - payment_method
+      - notes
+    detect:
+      required_all: [sku, qty, unit_price]
+      required_any: [customer, payment_method, ref_no]
+      forbidden_any: [unit_cost]
+
+  PURCHASE:
+    fields:
+      - ref_no
+      - date
+      - vendor
+      - sku
+      - qty
+      - unit_cost
+      - shipping
+      - tax
+      - notes
+    detect:
+      required_all: [sku, qty, unit_cost]
+      required_any: [vendor, ref_no]
+      forbidden_any: [discount]
+
+  EXPENSE:
+    fields:
+      - ref_no
+      - date
+      - category
+      - amount
+      - vendor
+      - payment_method
+      - notes
+    detect:
+      required_all: [category, amount]
+      required_any: [vendor, payment_method, ref_no]
+      forbidden_any: [sku, qty]
+
+  ADJUSTMENT:
+    fields:
+      - ref_no
+      - date
+      - sku
+      - qty_delta
+      - reason
+      - notes
+    detect:
+      required_all: [sku, qty_delta]
+      required_any: [reason, ref_no]
+      forbidden_any: [customer, vendor]

@@ -1,0 +1,18 @@
+"""
+Install required packages for door entry QR code system
+Run: pip install -r door_entry_requirements.txt
+"""
+
+# Existing dependencies (already installed)
+bcrypt>=4.0.0
+
+# QR Code Generation
+qrcode>=7.4.2
+Pillow>=10.0.0
+
+# Encryption (cryptography)
+cryptography>=41.0.0
+
+# Optional: for production use
+# Flask>=2.3.0  # For REST API endpoints
+# Redis>=5.0.0  # For distributed fraud detection

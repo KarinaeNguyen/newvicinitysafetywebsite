@@ -1,0 +1,38 @@
+repo_layout:
+  app.py: "Typer CLI entrypoint. Prompts user, validates, detects log_type, writes DB."
+  dashboard.py: "Streamlit dashboard. Reads DB and renders KPIs, tables, charts."
+  core/db.py: "DB engine/session factory, init/create tables."
+  core/models.py: "SQLAlchemy models: LogEntry, Product, ProductMovement."
+  core/config.py: "Loads YAML log type definitions + field metadata."
+  core/detect.py: "Log type detection engine (scoring + confidence + tie handling)."
+  core/validate.py: "Payload validation and coercion (dates, ints, floats)."
+  core/services.py: "Business logic: insert log, project to products, write movements."
+  core/queries.py: "Dashboard query helpers + KPI computations."
+  tests/: "Unit tests for detect + services."
+
+runtime:
+  database:
+    type: "sqlite"
+    path_default: "accounting.db"
+    env_override: "ACCOUNTING_DB_PATH"
+
+log_entry_flow:
+  - "Collect payload via CLI or Streamlit Form"
+  - "Validate/coerce payload types"
+  - "Detect log_type"
+  - "Insert log_entries row"
+  - "If PRODUCT_UPDATE/PURCHASE/SALES/ADJUSTMENT: update products + write movements"
+
+detection_engine:
+  scoring:
+    required_all_present: 5
+    required_all_missing: -10
+    required_any_present: 2
+    forbidden_any_present: -100
+  confidence:
+    high: "winner_score >= 12 AND margin >= 5"
+    medium: "winner_score >= 8"
+    low: "else"
+  tie_break:
+    - "Prefer types with more required_all satisfied"
+    - "Else prompt user to choose"
