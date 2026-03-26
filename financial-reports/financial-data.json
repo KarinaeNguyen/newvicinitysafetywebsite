@@ -1,0 +1,100 @@
+{
+  "export_date": "2026-03-26T10:49:56.919878",
+  "balance": 0.0,
+  "sales_30d": {
+    "period_days": 30,
+    "total_orders": 8,
+    "total_units": 22,
+    "total_sales": 17672000.0,
+    "total_vat": 0.0
+  },
+  "sales_90d": {
+    "period_days": 90,
+    "total_orders": 13,
+    "total_units": 29,
+    "total_sales": 23612000.0,
+    "total_vat": 0.0
+  },
+  "inventory": [
+    {
+      "sku": "HM2WD-W",
+      "name": "Alarm Bell",
+      "units": 2,
+      "unit_cost": 750000.0,
+      "total_value": 1500000.0
+    },
+    {
+      "sku": "WS2GW-R",
+      "name": "Basic Gateway",
+      "units": 5,
+      "unit_cost": 650000.0,
+      "total_value": 3250000.0
+    },
+    {
+      "sku": "HM2EB-W",
+      "name": "Emergency Button",
+      "units": 2,
+      "unit_cost": 562500.0,
+      "total_value": 1125000.0
+    },
+    {
+      "sku": "HM5HW-T",
+      "name": "Heat Detector Alarm",
+      "units": 9,
+      "unit_cost": 562500.0,
+      "total_value": 5062500.0
+    },
+    {
+      "sku": "HM1RC-W",
+      "name": "Remote Control",
+      "units": 3,
+      "unit_cost": 422500.0,
+      "total_value": 1267500.0
+    },
+    {
+      "sku": "HM2SA-1W",
+      "name": "Smoke Detector Alarm",
+      "units": 33,
+      "unit_cost": 562500.0,
+      "total_value": 18562500.0
+    }
+  ],
+  "top_products": [
+    {
+      "sku": "HM2SA-1W",
+      "name": "Smoke Detector Alarm",
+      "units": 13,
+      "sales": 10530000.0
+    },
+    {
+      "sku": "HM5HW-T",
+      "name": "Heat Detector Alarm",
+      "units": 5,
+      "sales": 4050000.0
+    },
+    {
+      "sku": "WS2GW-R",
+      "name": "Basic Gateway",
+      "units": 1,
+      "sales": 1080000.0
+    },
+    {
+      "sku": "HM2EB-W",
+      "name": "Emergency Button",
+      "units": 1,
+      "sales": 810000.0
+    },
+    {
+      "sku": "HM1RC-W",
+      "name": "Remote Control",
+      "units": 1,
+      "sales": 702000.0
+    },
+    {
+      "sku": null,
+      "name": "Unknown",
+      "units": 1,
+      "sales": 500000.0
+    }
+  ]
+}
